@@ -50,4 +50,4 @@ npm run start
 
 ## Despliegue en Vercel
 
-Importa este repositorio en Vercel y define `BACKEND_API_URL` con la URL base pública de la API Go. Configura en el backend el origen público de este frontend para CORS.
+Importa este repositorio en Vercel y, en **Settings → Environment Variables**, define `BACKEND_API_URL` con `https://crm-backend-05fc.onrender.com` para Production (y Preview si vas a probar previews). No agregues `/` al final ni `/api/v1`. Configura en el backend `FRONTEND_ORIGIN` con el dominio público que Vercel asigne al frontend para CORS.
